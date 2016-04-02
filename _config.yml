@@ -1,0 +1,8 @@
+title:            "@liukai"
+url:              http://liukai.link
+permalink:        pretty
+google_analytics: 
+timezone:         Asia/Beijing
+sass:
+  sass_dir: assets
+  style: :compressed

@@ -1,0 +1,47 @@
+<!doctype>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <header class="header" data-pjax>
+      <a href="/" class="home js-head">&nbsp;</a>
+    </header>
+
+    <div class="wrapper">
+      <div class="column js-content">
+        {% if page.date %}
+          <article>
+            <header class="post-header">
+              <h3 class="post-title">{{ page.title }}</h3>
+              {% if page.date %}
+                <small>
+                  {{ page.date | date_to_string }} -
+                  by <a href="#" target="_blank">@lock</a>
+                </small>
+              {% endif %}
+            </header>
+            {{ content }}
+          </article>
+          <div class="pagination" data-pjax>
+            {% if page.previous %}
+              <a class="page-nav" href="{{ page.previous.url }}" id="js-previous-post">
+                &lt; {{ page.previous.title }}
+              </a>
+            {% endif %}
+            {% if page.next %}
+              <a class="page-nav" href="{{ page.next.url }}" id="js-next-post">
+                {{ page.next.title }} &gt;
+              </a>
+            {% endif %}
+          </div>
+        {% else %}
+          {{ content }}
+        {% endif %}
+      </div>
+    </div>
+    <footer class="footer">
+      🎸&nbsp;&nbsp;&nbsp;💻&nbsp;&nbsp;&nbsp;🍅&nbsp; in Nanjing
+    </footer>
+  </body>
+</html>

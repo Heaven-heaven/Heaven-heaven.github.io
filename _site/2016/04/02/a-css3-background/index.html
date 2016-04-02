@@ -1,0 +1,112 @@
+<!doctype>
+<html>
+  <head>
+    <link href='/assets/new.css' rel='stylesheet' type='text/css' />
+<link href='/assets/syntax.css' rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Carme' rel='stylesheet' type='text/css'>
+<script src='/assets/jquery.js' type='text/javascript'></script>
+<script src='/assets/stuff.js' type='text/javascript'></script>
+
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='text/html; charset=utf-8' http-equiv='content-type' />
+
+  <meta content='http://liukai.link/2016/04/02/a-css3-background/' property='og:url' />
+  <meta content="CSS3实现背景渐变Inspired by Fabric website例子中 class = background 的上级元素是 &lt;body&gt;，使用时记得把上级元素设置成 overflow:hidden;CSS&lt;s..." property='og:description' />
+  <meta content="article" property="og:type" />
+  <meta content='A Beautiful CSS3 Background - @liukai' property='og:title' />
+  <title>A Beautiful CSS3 Background - @liukai</title>
+
+<!-- - -->
+<!--<script type='text/javascript'>
+  //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+</script>
+ -->
+
+  </head>
+  <body>
+    <header class="header" data-pjax>
+      <a href="/" class="home js-head">&nbsp;</a>
+    </header>
+
+    <div class="wrapper">
+      <div class="column js-content">
+        
+          <article>
+            <header class="post-header">
+              <h3 class="post-title">A Beautiful CSS3 Background</h3>
+              
+                <small>
+                  02 Apr 2016 -
+                  by <a href="#" target="_blank">@lock</a>
+                </small>
+              
+            </header>
+            <p><img src="/images/background.png" alt="background" /></p>
+
+<h3 id="css3">CSS3实现背景渐变</h3>
+<hr />
+
+<p>Inspired by <a href="https://get.fabric.io/">Fabric website</a></p>
+
+<p>例子中 class = background 的上级元素是 &lt;body&gt;，使用时记得把上级元素设置成 overflow:hidden;</p>
+
+<p>CSS</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;style&gt;
+	.body{
+  		height:100%;
+  		width:100%;
+  		overflow: hidden;
+	}
+	.background{
+  		height:200%;
+  		width: 200%;
+  		margin:0;top:0;
+  		padding-top:40%;
+  		left:-50%;
+  		position: fixed;
+  		background: -moz-radial-gradient(#09c ,#000, #000);
+  		background: -o-radial-gradient(#09c ,#000, #000);
+  		background: -ms-radial-gradient(#09c ,#000, #000);
+  		background: -webkit-radial-gradient(#09c ,#000, #000);
+  		background: -webkit-gradient(radial,from(#09c),to(#000));
+	}
+  	&lt;/style&gt;
+</code></pre>
+</div>
+
+<p>HTML</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;body&gt;
+  		&lt;div class="background"&gt;
+&lt;/body&gt;
+</code></pre>
+</div>
+
+          </article>
+          <div class="pagination" data-pjax>
+            
+              <a class="page-nav" href="/2016/04/01/first-post/" id="js-previous-post">
+                &lt; First Blog
+              </a>
+            
+            
+          </div>
+        
+      </div>
+    </div>
+    <footer class="footer">
+      🎸&nbsp;&nbsp;&nbsp;💻&nbsp;&nbsp;&nbsp;🍅&nbsp; in Nanjing
+    </footer>
+  </body>
+</html>
