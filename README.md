@@ -1,11 +1,7 @@
 ## A blog
 ---
 
-This is where lock writes his stuff and messes around.
-
-Lock is a code fan, guitar fan, a normal person in Nanjing.
-
-Nice to meet you.
+Ah blog
 
 
 ## How it works
