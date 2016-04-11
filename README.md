@@ -8,4 +8,4 @@ Ah blog
 ---
 This blog is powered by jekyll, and was inspired by [muan's blog](http://muan.co), thanks a lot.
 
-Click [here](http://liukai.link) to visit this blog.
+Click [here](http://uaiuai.cc) to visit this blog.
