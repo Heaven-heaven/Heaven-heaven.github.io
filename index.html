@@ -2,7 +2,18 @@
 layout: post
 ---
 
-<h3>Writings.</h3>
+<h3>Writings</h3>
+<ul class="list" data-pjax>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+      <time>{{ post.date | date: "%b %d, %Y" }}</time>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<h3>SAP BI</h3>
 <ul class="list" data-pjax>
 {% for post in site.posts %}
   <li>
