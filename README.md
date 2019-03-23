@@ -6,6 +6,6 @@ Ah blog
 
 ## How it works
 ---
-This blog is powered by jekyll, and was inspired by [muan's blog](http://muan.co), thanks a lot.
+This blog is powered by jekyll.
 
 Click [here](http://uaiuai.cc) to visit this blog.
