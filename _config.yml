@@ -6,3 +6,4 @@ timezone:         Asia/Beijing
 sass:
   sass_dir: assets
   style: :compressed
+include: [".well-known"]
