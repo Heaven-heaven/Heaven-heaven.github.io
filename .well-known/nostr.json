@@ -4,4 +4,3 @@
         "ui": "d5815a6b930251f19f5ab0be72aec96e128437b5e496d3f152fa9b212232d8be"
     }
 }
-include: [".well-known"]
